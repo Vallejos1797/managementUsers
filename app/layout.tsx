@@ -13,11 +13,16 @@ export const metadata: Metadata = {
 export default function RootLayout({children,}: { children: React.ReactNode }) {
     return (
         <html lang="en">
-
+        <head>
+            <link rel="stylesheet" href="https://bootswatch.com/5/cyborg/bootstrap.css"/>
+        </head>
         <body className={inter.className}>
 
         <Navigation/>
-        {children}
+        <div className="container p-4">
+
+            {children}
+        </div>
         </body>
         </html>
     )
